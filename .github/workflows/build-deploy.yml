@@ -37,7 +37,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build Vite app
-        run: pnpm build
+        run: pnpm build --base=/sn-music-sync/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
